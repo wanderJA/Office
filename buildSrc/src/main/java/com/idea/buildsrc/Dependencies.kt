@@ -51,7 +51,7 @@ object Libs {
 
         object Compose {
             const val snapshot = ""
-            const val version = "1.2.0-beta03"
+            const val version = "1.2.0"
 
             const val foundation = "androidx.compose.foundation:foundation:${version}"
             const val layout = "androidx.compose.foundation:foundation-layout:${version}"
@@ -71,9 +71,21 @@ object Libs {
         }
 
         object Lifecycle {
-            const val viewModelCompose = "androidx.lifecycle:lifecycle-viewmodel-compose:2.4.1"
-            const val lifecycleRuntimeKtx ="androidx.lifecycle:lifecycle-runtime-ktx:2.3.1"
+            private const val lifecycle_version = "2.3.1"
+            const val lifecycle_viewModel_compose = "androidx.lifecycle:lifecycle-viewmodel-compose:2.4.1"
+            const val lifecycle_livedata             = "androidx.lifecycle:lifecycle-livedata:$lifecycle_version"
+            const val lifecycle_livedata_ktx         = "androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version"
+            const val lifecycle_extensions           = "androidx.lifecycle:lifecycle-extensions:2.2.0"
+            const val lifecycle_viewmodel            = "androidx.lifecycle:lifecycle-viewmodel:$lifecycle_version"
+            const val lifecycle_viewmodel_ktx        = "androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycle_version"
+            const val lifecycle_viewmodel_savedstate = "androidx.lifecycle:lifecycle-viewmodel-savedstate:$lifecycle_version"
+            const val lifecycle_common               = "androidx.lifecycle:lifecycle-common-java8:$lifecycle_version"
+            const val lifecycle_runtime              = "androidx.lifecycle:lifecycle-runtime:$lifecycle_version"
+            const val lifecycle_runtime_ktx          = "androidx.lifecycle:lifecycle-runtime-ktx:$lifecycle_version"
+            const val lifecycle_core                 = "androidx.lifecycle:lifecycle-livedata-core-ktx:$lifecycle_version"
         }
+
+
 
         object Navigation {
             const val navigationCompose = "androidx.navigation:navigation-compose:2.4.2"

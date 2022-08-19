@@ -1,4 +1,4 @@
-package com.tencent.bbg.liveflow
+package com.idea.basecomponents.liveflow
 
 import java.util.concurrent.atomic.AtomicLong
 

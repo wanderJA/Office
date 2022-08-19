@@ -1,7 +1,7 @@
-package com.tencent.bbg.liveflow
+package com.idea.basecomponents.liveflow
 
 import android.os.SystemClock
-import com.tencent.bbg.liveflow.LiveEvent.Companion.WHEN_NOTHING
+import com.idea.basecomponents.liveflow.LiveEvent.Companion.WHEN_NOTHING
 import java.util.concurrent.CopyOnWriteArrayList
 import java.util.concurrent.atomic.AtomicInteger
 import java.util.concurrent.atomic.AtomicReference

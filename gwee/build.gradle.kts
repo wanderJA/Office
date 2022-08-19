@@ -1,5 +1,3 @@
-import com.idea.buildsrc.Libs
-
 plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
@@ -35,14 +33,13 @@ android {
 }
 
 dependencies {
-    implementation(Libs.Kotlin.stdlib)
-    implementation(Libs.AndroidX.appcompat)
-    implementation(Libs.Coroutines.android)
-    implementation(Libs.AndroidX.Lifecycle.lifecycle_common)
-    implementation(Libs.AndroidX.Lifecycle.lifecycle_runtime)
-    implementation(Libs.AndroidX.Lifecycle.lifecycle_runtime_ktx)
-    implementation(Libs.AndroidX.Lifecycle.lifecycle_livedata)
-    implementation(Libs.AndroidX.Lifecycle.lifecycle_livedata_ktx)
-    implementation(Libs.AndroidX.Lifecycle.lifecycle_viewmodel_ktx)
-    implementation(Libs.AndroidX.Lifecycle.lifecycle_viewmodel)
+    implementation(com.idea.buildsrc.Libs.Kotlin.stdlib)
+    implementation(com.idea.buildsrc.Libs.Coroutines.android)
+    implementation(com.idea.buildsrc.Libs.AndroidX.Lifecycle.lifecycle_common)
+    implementation(com.idea.buildsrc.Libs.AndroidX.Lifecycle.lifecycle_runtime)
+    implementation(com.idea.buildsrc.Libs.AndroidX.Lifecycle.lifecycle_runtime_ktx)
+    implementation(com.idea.buildsrc.Libs.AndroidX.Lifecycle.lifecycle_livedata)
+    implementation(com.idea.buildsrc.Libs.AndroidX.Lifecycle.lifecycle_livedata_ktx)
+    implementation(com.idea.buildsrc.Libs.AndroidX.Lifecycle.lifecycle_viewmodel_ktx)
+    implementation(com.idea.buildsrc.Libs.AndroidX.Lifecycle.lifecycle_viewmodel)
 }

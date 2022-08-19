@@ -1,16 +1,13 @@
-package com.tencent.bbg.liveflow
+package com.idea.basecomponents.liveflow
 
 import android.os.Looper
 import androidx.lifecycle.LifecycleOwner
 import androidx.lifecycle.lifecycleScope
-import com.tencent.bbg.logger.Logger
-import com.tencent.bbg.raftwrapper.BuildConfig
 import kotlin.coroutines.CoroutineContext
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.CoroutineStart
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.collect
 import kotlinx.coroutines.flow.launchIn
 import kotlinx.coroutines.isActive
 import kotlinx.coroutines.launch
@@ -52,9 +49,9 @@ fun <T> Flow<T>.observe(
             }
         } finally {
             // for lifecycleScope, this block run in main thread
-            if (BuildConfig.DEBUG) {
-                Logger.d(TAG, "lifecycleScope@${lifecycleScope} canceled")
-            }
+//            if (BuildConfig.DEBUG) {
+//                Logger.d(TAG, "lifecycleScope@${lifecycleScope} canceled")
+//            }
         }
     }
 }
@@ -89,9 +86,9 @@ fun <T> Flow<T>.launchIn(
             this@launchIn.launchIn(this)
         } finally {
             // for lifecycleScope, this block run in main thread
-            if (BuildConfig.DEBUG) {
-                Logger.d(TAG, "lifecycleScope@${lifecycleScope} canceled")
-            }
+//            if (BuildConfig.DEBUG) {
+//                Logger.d(TAG, "lifecycleScope@${lifecycleScope} canceled")
+//            }
         }
     }
 }

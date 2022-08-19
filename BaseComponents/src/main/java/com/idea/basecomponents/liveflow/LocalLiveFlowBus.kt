@@ -1,9 +1,7 @@
-package com.tencent.bbg.liveflow
+package com.idea.basecomponents.liveflow
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.asLiveData
-import com.tencent.bbg.logger.Logger
-import com.tencent.bbg.raftwrapper.BuildConfig
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
@@ -276,7 +274,7 @@ class LocalLiveFlowBus(
      * 输出调试信息
      */
     private inline fun debug(crossinline block: () -> String) {
-        Logger.d(TAG, block())
+//        Logger.d(TAG, block())
     }
 
 }

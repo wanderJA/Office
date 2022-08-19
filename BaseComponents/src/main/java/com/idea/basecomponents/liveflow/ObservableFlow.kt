@@ -1,5 +1,6 @@
-package com.tencent.bbg.liveflow
+package com.idea.basecomponents.liveflow
 
+import com.idea.basecomponents.liveflow.observe
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.Flow

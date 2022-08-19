@@ -1,9 +1,14 @@
-package com.tencent.bbg.liveflow
+package com.idea.basecomponents.liveflow
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.asLiveData
 import androidx.lifecycle.viewModelScope
+import com.idea.basecomponents.liveflow.observeInBackground
+import com.idea.basecomponents.liveflow.observeInComputation
+import com.idea.basecomponents.liveflow.observeInIO
+import com.idea.basecomponents.liveflow.observeInMainImmediate
+import com.idea.basecomponents.liveflow.observeUnconfined
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.cancel
